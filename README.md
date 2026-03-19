@@ -1,31 +1,64 @@
+# 🛡 SpeakSafe – AI Voice Emergency Assistant
 
-# SpeakSafe – AI Voice Emergency Assistant
+## 📌 Overview
+SpeakSafe is a voice-enabled emergency assistance system designed for critical situations where users may not be able to interact with their devices manually. The system detects distress commands such as "Help" or "Emergency", captures the user's location, and generates an immediate response with a shareable map link.
 
-SpeakSafe is a voice-based emergency assistant that detects distress commands and sends an emergency alert with location.
+---
 
-## Features
-- Voice command detection
-- Panic keyword recognition
-- Location tracking
-- Google Maps emergency link
-- AI voice response using Murf
-- Modern UI dashboard
+## 🚨 Problem Statement
+In emergency situations, individuals often do not have enough time or ability to type messages or navigate mobile applications. There is a need for a fast, hands-free solution that can trigger alerts and share location instantly.
 
-## Tech Stack
-Frontend: HTML, CSS, JavaScript  
-Backend: Python Flask  
-AI Voice: Murf AI API
+---
 
-## How It Works
-1. User clicks microphone
-2. User says "Help" or "Emergency"
-3. System detects panic words
-4. Location is captured
-5. AI voice response is generated
-6. Google Maps opens with location
+## 💡 Solution
+SpeakSafe provides a real-time voice-based emergency alert system that:
 
-## Demo
-Voice command → Emergency alert → AI response → Map location
+- Listens for predefined panic keywords
+- Detects emergency situations automatically
+- Captures user location using browser APIs
+- Sends alert data to a backend server
+- Generates a Google Maps link for quick response
 
-## Author
-Abhishek
+---
+
+## ✨ Key Features
+
+- 🎤 Voice Command Detection (Hands-free interaction)
+- 🚨 Panic Keyword Recognition
+- 📍 Real-time Location Capture
+- 🗺 Google Maps Integration
+- 📊 Backend Alert Logging Dashboard
+- ⚡ Fast and Lightweight System
+- 🌐 Easy to deploy and run locally
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- Web Speech API (Speech Recognition)
+
+### Backend
+- Python
+- Flask
+- Flask-CORS
+
+### APIs & Services
+- Browser Geolocation API
+- Google Maps
+
+---
+
+## ⚙️ How It Works
+
+1. User activates the system (or auto-listening mode)
+2. Voice input is captured using the browser
+3. Speech is converted to text
+4. System checks for emergency keywords
+5. Location is retrieved using geolocation API
+6. Data is sent to Flask backend
+7. Backend logs alert and generates map link
+8. Google Maps opens with the user's location
